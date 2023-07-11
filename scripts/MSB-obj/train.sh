@@ -12,3 +12,4 @@ python train.py \
 --slide_verts 0 \
 --num_aug 20 \
 --niter_decay 100 \
+--batch_size 64 \
