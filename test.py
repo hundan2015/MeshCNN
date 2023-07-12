@@ -21,7 +21,7 @@ def run_test(epoch=-1):
     counter = 0
     for i in model.notGood:
         print(dataset.dataset.paths[i-1])
-        print("Mistake:"+model.mistake[counter])
+        print("Mistake:"+str(model.mistake[counter]))
         counter += 1
     return writer.acc
 
