@@ -24,6 +24,8 @@ class ClassifierModel:
         self.mesh = None
         self.soft_label = None
         self.loss = None
+        self.notGood = []
+        self.counter = 1
 
         #
         self.nclasses = opt.nclasses
@@ -119,6 +121,10 @@ class ClassifierModel:
         """computes accuracy for classification / segmentation """
         if self.opt.dataset_mode == 'classification':
             correct = pred.eq(labels).sum()
+            for i in range(len(pred)):
+                if (int(pred[i]) != int(labels[i])):
+                    self.notGood.append(self.counter)
+                self.counter += 1
         elif self.opt.dataset_mode == 'segmentation':
             correct = seg_accuracy(pred, self.soft_label, self.mesh)
         return correct
