@@ -9,3 +9,4 @@ python test.py \
 --norm group \
 --resblocks 1 \
 --export_folder meshes \
+--num_threads 2 \
