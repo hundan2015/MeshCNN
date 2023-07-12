@@ -2,8 +2,8 @@
 
 ## run the training
 python train.py \
---dataroot datasets/MSB-obj \
---name MSB-obj \
+--dataroot datasets/ModelNet9 \
+--name ModelNet9 \
 --ncf 64 128 256 256 \
 --pool_res 740 670 600 570 \
 --norm group \
