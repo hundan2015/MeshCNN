@@ -19,7 +19,7 @@ def run_test(epoch=-1):
         writer.update_counter(ncorrect, nexamples)
     writer.print_acc(epoch, writer.acc)
     for i in model.notGood:
-        print(dataset.dataset.paths[i])
+        print(dataset.dataset.paths[i-1])
     return writer.acc
 
 
