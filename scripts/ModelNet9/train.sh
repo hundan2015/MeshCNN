@@ -14,3 +14,4 @@ python train.py \
 --niter_decay 100 \
 --batch_size 64 \
 --ninput_edges 2000 \
+--num_threads 2 \
