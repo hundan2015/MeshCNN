@@ -5,7 +5,7 @@ python train.py \
 --dataroot datasets/ModelNet9 \
 --name ModelNet9 \
 --ncf 64 128 256 256 \
---pool_res 740 670 600 570 \
+--pool_res 740 670 600 \
 --norm group \
 --resblocks 1 \
 --flip_edges 0.2 \
