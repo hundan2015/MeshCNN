@@ -26,6 +26,7 @@ class ClassifierModel:
         self.loss = None
         self.notGood = []
         self.counter = 1
+        self.mistake = []
 
         #
         self.nclasses = opt.nclasses
@@ -124,6 +125,7 @@ class ClassifierModel:
             for i in range(len(pred)):
                 if (int(pred[i]) != int(labels[i])):
                     self.notGood.append(self.counter)
+                    self.mistake.append(int(pred[i]))
                 self.counter += 1
         elif self.opt.dataset_mode == 'segmentation':
             correct = seg_accuracy(pred, self.soft_label, self.mesh)
