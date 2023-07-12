@@ -13,3 +13,4 @@ python train.py \
 --num_aug 20 \
 --niter_decay 100 \
 --batch_size 64 \
+--ninput_edges 2000 \
