@@ -13,5 +13,6 @@ python train.py \
 --num_aug 20 \
 --niter_decay 100 \
 --batch_size 64 \
---ninput_edges 2000 \
+--ninput_edges 500 \
 --num_threads 2 \
+--max_dataset_size 40 \
