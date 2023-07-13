@@ -12,7 +12,7 @@ python train.py \
 --slide_verts 0 \
 --num_aug 20 \
 --niter_decay 100 \
---batch_size 16 \
+--batch_size 8 \
 --ninput_edges 100000 \
 --num_threads 2 \
 --max_dataset_size 40 \
