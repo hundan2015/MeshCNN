@@ -2,10 +2,10 @@
 
 ## run the test and export collapses
 python test.py \
---dataroot datasets/ModelNet9 \
---name ModelNet9 \
+--dataroot datasets/ModelNet10 \
+--name ModelNet10 \
 --ncf 64 128 256 256 \
---pool_res 740 740 740 740 \
+--pool_res 600 450 300 180 \
 --norm group \
 --resblocks 1 \
 --export_folder meshes \
