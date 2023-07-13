@@ -5,7 +5,7 @@ python test.py \
 --dataroot datasets/ModelNet10 \
 --name ModelNet10 \
 --ncf 64 128 256 256 \
---pool_res 600 450 300 180 \
+--pool_res 2000 2000 2000 2000 \
 --norm group \
 --resblocks 1 \
 --export_folder meshes \
